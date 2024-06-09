@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import RouterOutlet from './routes/RouterOutlet.jsx'
 import { BrowserRouter } from 'react-router-dom'
-import './index.css'
 import { ApolloProvider } from '@apollo/client'
 import client from './data/apollo-client.js'
 

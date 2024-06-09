@@ -2,7 +2,7 @@ import { ApolloClient, ApolloLink, HttpLink, InMemoryCache } from "@apollo/clien
 import { onError } from "@apollo/client/link/error";
 
 const httpLink = new HttpLink({
-  url: "https://graphql.org/swapi-graphql/",
+  uri: import.meta.env.VITE_APP_GRAPHQL_URI,
 });
 
 const errorLink = new onError(({ graphQLErrors, networkError }) => {
