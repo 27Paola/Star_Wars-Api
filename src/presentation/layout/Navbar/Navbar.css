@@ -1,0 +1,14 @@
+.Appbar {
+    border: none;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.toolbar img {
+    width: 60px;
+    height: 60px;
+}
