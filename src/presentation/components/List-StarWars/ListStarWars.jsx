@@ -9,7 +9,7 @@ import "./ListStarWars.css";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import CharacterDetailModa from "../../ui/Loading/Character-Detail-Modal/CharacterDetailModal";
+import CharacterDetailModal from"../../ui/Character-Detail-Modal/CharacterDetailModal";
 
 const ListStarWars = ({ graphQLData }) => {
   const [open, setOpen] = React.useState(false);
@@ -59,12 +59,17 @@ const ListStarWars = ({ graphQLData }) => {
                   primary={node.name}
                   style={{ marginTop: "1.2rem" }}
                 />
-                <GiArrowed className="Icon" />
+                <GiArrowed
+                  className="Icon"
+                  onClick={() => {
+                    handleOpen(node?.id);
+                  }}
+                />
               </ListItem>
             </>
           );
         })}
-        <CharacterDetailModa
+        <CharacterDetailModal
           open={open}
           handleClose={handleClose}
           id={dataId}
