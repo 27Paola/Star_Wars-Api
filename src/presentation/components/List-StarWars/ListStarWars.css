@@ -1,0 +1,22 @@
+.List-contend{
+    border-radius: 6px;
+    background-color: rgba(165, 42, 42, 0.422);
+    border:1.5px solid #692520 ;
+    font-family: jomhuria;
+}
+
+.Card{
+    border: 1px solid #692520;
+}
+.Icon{
+    margin-left: 1rem;
+        margin-top: 1rem;
+        font-size: 22px;
+        color: #692520;
+}
+
+.Card span{
+    font-family: Jomhuria;
+    font-size: large;
+    text-align: center;
+}
