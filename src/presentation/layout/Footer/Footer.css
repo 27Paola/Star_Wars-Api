@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer {
+    background-color: #a73737b3;
+    /* Color de fondo del footer */
+    padding: 20px 0;
+    color: #252424;
+    /* Color del texto */
+    text-align: center;
+}
+
+.footer-content {
+    position: static;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer-text {
+    font-family: Jomhuria;
+    font-size: large;
+    flex: 1;
+    margin: 0 20px;
+    color: aliceblue;
+}
