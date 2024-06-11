@@ -1,42 +1,33 @@
-.homeService-container {
+.home-section-container {
     width: 100%;
     display: grid;
     place-content: center;
     place-items: center;
-    margin-top: 0.8rem;
-    height: auto;
-    margin: 10px;
+    margin-top: 1rem;
 }
 
-.homeService-container img {
+.home-section-container img {
     width: 200px;
 }
 
 .search-input {
-    width: 220px;
+    width: 280px;
     height: 30px;
     border-radius: 5px;
-    border: 2px solid #77220e;
-    margin-top: 0.5rem;
+    border: 2px solid #B13214;
+    margin-top: 1rem;
     padding: 0.3rem 1rem 0.3rem 3rem;
-    background-color: #e0dede;
-    align-content: center;
-    align-items: center;
-    font-family: Jomhuria;
-    color: #181818;
+    background-color: #ffffffb7;
 }
 
 .search-input::placeholder {
-    color: #181818;
-    font-family: Jomhuria;
-    font-size:large;
+    color: #838D93;
 }
 
 .search-input:focus {
     outline: none;
-    color: #181818;
-    font-family: Jomhuria;
-    font-size: medium;
+    font-weight: bold;
+    color: #838D93;
 }
 
 .home-section-container div {
@@ -48,18 +39,15 @@
 
 .search-icon {
     font-size: 22px;
-    position:relative;
-    left: 0.5rem;
-    top: 0.5rem;
-    color: #77220e;
-}   
+    position: absolute;
+    left: 0.8rem;
+    top: 1.65rem;
+    color: #B13214;
+}
 
 .tabs-container {
     flex-direction: column;
     margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    font-family: Jomhuria;
 }
 
 .tab {
