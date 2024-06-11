@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useGetCharacters } from "../../../data/services/character-service";
+import { useGetCharacters } from "../../../data/services/ServicesCharacters";
 import Loading from "../../ui/Loading/Loading";
 import HomeService from "../../components/HomeService/HomeService";
 import Footer from "../../layout/Footer/Footer";
