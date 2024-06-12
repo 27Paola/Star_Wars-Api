@@ -36,27 +36,26 @@ What things do you need to install the software and how to see it on the local d
 </div>
 
 <div>
-<h2>Deployment <img width="50" src="https://media0.giphy.com/media/btKMl6A7hz99K2UdxU/200w.webp?cid=ecf05e47r578i7flklvgqvu6jwow7e7guk3echvpysuuqj1a&rid=200w.webp&ct=s"/></h2>
+<h2>Deployment <img width="50" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3E0anJmMWIzb2w1NXVpc3YzZXVmYm9xeDQzdms1eHQ3cjNyZjRneCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/z3iN1cvskVRqhf6PLf/giphy.webp"/></h2>
 
 The deployment is ready to run
 bash 
-<https://api-star-wars-gamma.vercel.app/>
+
+<https://api-star-wars-gamma.vercel.app/#/>
 
 
 </div>
 <div>
-  <h2>Additional information <img width="40" src="https://media1.giphy.com/media/JwOUH7TbHFHg3LnX18/giphy.gif?cid=ecf05e472ft6iopxnm5wmaxiyizyb4gk2a7m32i17zow50nk&rid=giphy.gif&ct=s"/></h2>
-    In this space you will find information on the logic exercises, the specifications on how to access their solution and view them from the console.
-  bash
-   https://honorable-fisherman-c88.notion.site/Documentaci-n-Progr-mate-School-6b9a798332554f5b8cf54b706148369b
+  <h2>Additional information <img width="40"/></h2>
+    In this space you will find information on the logic exercises, the specifications on how to access their solution and view them from the console
   
-  - Installation of the api
-2. `npm install`
-3. `node index`
+  - These links are applied in the API URL to open the solution of the logic exercises in the console 
+1. `https://api-star-wars-gamma.vercel.app/#/logic-algoritms/number-printer`
+2. `https://api-star-wars-gamma.vercel.app/#/logic-algoritms/pokemon`
 </div>
 
 
-<h2> Built <img width="50" src="https://media4.giphy.com/media/BFcibA1iSocGQJKqGO/200w.webp?cid=ecf05e47aepb75aav47t08l20x9jk5rmb6efz8gaucq7ffl0&rid=200w.webp&ct=s"/></h2>
+<h2> Built <img width="50" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnNhZnU4bzdpbTYwd3k3NWJtMGR3eDBtZDNvdmNmNTZza2cwdWo3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Zuuh8iDBUZTaxckEYV/giphy.webp"/></h2>
 
 The tools that were used to create this project are:
 
