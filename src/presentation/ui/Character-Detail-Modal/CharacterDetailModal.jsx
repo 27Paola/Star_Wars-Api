@@ -27,9 +27,8 @@ const CharacterDetailModal = ({ open, handleClose, id }) => {
     variables: { id: id },
   });
   if (loading) return <Typography>Loading...</Typography>;
-  if (error)
-    return <Typography>Error loading data: {error.message}</Typography>;
-    const character = data.person;
+  if (error)return<></>
+    const character = data?.person;
     
   return (
     <div>

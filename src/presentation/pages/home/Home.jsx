@@ -16,7 +16,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <HomeService data={data} />
+      <div className="home-service-container">
+        <HomeService data={data} />
+      </div>
       <Footer />
     </>
   );

@@ -5,11 +5,9 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import FavoriteCharacters from "../Favorite-characters/FavoriteCharacters";
 import ListStarWars from "../List-StarWars/ListStarWars";
-import { useState } from "react";
-import { useEffect } from "react";
-
+import { useState, useEffect } from "react";
+import Credits from "../Credits/Credits";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,24 +39,38 @@ function a11yProps(index) {
 }
 
 const HomeService = ({ data }) => {
-  const [value, setValue] = React.useState(0);
-
-  const [graphQLData] = React.useState(data);
-
+  const [value, setValue] = useState(0);
+  const [graphQLData, setGraphQLData] = useState(data);
   const [searchTerm, setSearchTerm] = useState("");
-
-  const filterData = graphQLData?.allPeople?.edges?.filter((item) => {
-    item?.name?.toLowerCase().includes(searchTerm?.toLowerCase())
-  });
+  const [filteredData, setFilteredData] = useState(data);
 
   useEffect(() => {
-    if(searchTerm === ""){setSearchTerm(graphQLData)}
-    
-  }, [])
-  
+    const filterData = () => {
+      if (!searchTerm) {
+        setFilteredData(graphQLData);
+      } else {
+        const filtered = {
+          ...graphQLData,
+          allPeople: {
+            ...graphQLData.allPeople,
+            edges: graphQLData.allPeople.edges.filter(({ node }) =>
+              node.name.toLowerCase().includes(searchTerm.toLowerCase())
+            ),
+          },
+        };
+        setFilteredData(filtered);
+      }
+    };
+
+    filterData();
+  }, [searchTerm, graphQLData]);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+  };
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
   };
 
   return (
@@ -69,22 +81,22 @@ const HomeService = ({ data }) => {
         <input
           className="search-input"
           placeholder="Buscar personaje..."
-          onChange={(e) => {setSearchTerm(e.target.value);} }
-          
+          value={searchTerm}
+          onChange={handleSearchChange}
         ></input>
       </div>
       <Box sx={{ width: "100%" }} className="tabs-container">
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <Tabs value={value} onChange={handleChange}>
             <Tab label="Todos" {...a11yProps(0)} />
-            <Tab label="Favorito" {...a11yProps(1)} />
+            <Tab label="Creditos" {...a11yProps(1)} />
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
-          <ListStarWars graphQLData={graphQLData} />
+          <ListStarWars graphQLData={filteredData} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <FavoriteCharacters />
+          <Credits />
         </CustomTabPanel>
       </Box>
     </div>
