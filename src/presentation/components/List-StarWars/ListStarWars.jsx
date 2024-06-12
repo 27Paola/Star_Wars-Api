@@ -4,7 +4,7 @@ import ListItemText from "@mui/material/ListItemText";
 import List from "@mui/material/List";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-import { GiArrowed } from "react-icons/gi";
+import { IoIosArrowDropright } from "react-icons/io";
 import "./ListStarWars.css";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -59,7 +59,7 @@ const ListStarWars = ({ graphQLData }) => {
                   primary={node.name}
                   style={{ marginTop: "1.2rem" }}
                 />
-                <GiArrowed
+                <IoIosArrowDropright
                   className="Icon"
                   onClick={() => {
                     handleOpen(node?.id);
