@@ -29,8 +29,13 @@ What things do you need to install the software and how to see it on the local d
 
 - Installation of the api
 
-2. `npm install`
-3. `node index`
+1. `npm install`
+2. `node index`
+
+Create .env file in the root of the project and add this line
+```bash
+VITE_APP_GRAPHQL_URI=https://swapi-graphql.netlify.app/.netlify/functions/index
+```
 </div>
 
 </div>
