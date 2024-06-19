@@ -22,7 +22,7 @@ What things do you need to install the software and how to see it on the local d
   ```bash
   -cd "app" (Name of the place where you want the folder)
   -mk "nombre de la carpeta"
-  -git clone https://github.com/programateacademy/PROGRAMATE-SCHOOL-BACK.git  
+  -git clone https://github.com/27Paola/Star_Wars-Api.git  
   ```
 
 <h2> Installation <img width="30" src="https://media4.giphy.com/media/SXShzruDxR7jX5bKEe/200.webp?cid=ecf05e479dg9fjvijyq74h8mv63iji408q5q8qs9xlfdmvqo&rid=200.webp&ct=s"/></h2>
